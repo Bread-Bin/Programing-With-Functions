@@ -1,0 +1,23 @@
+import math
+import time
+
+"global varable is not a good practice. "
+"try to keep varible within a function like Def"
+" and other blocks of code"
+
+def subject():
+    subject = "what ever varibles you want"
+    print(subject)
+
+subject() # calling the function.
+
+def main():
+
+
+while True:
+    Value = input("Enter a number: ")
+    try:
+        return flaot(Value)
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+

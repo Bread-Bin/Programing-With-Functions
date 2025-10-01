@@ -1,0 +1,5 @@
+my_response = input("Ok, so first question: What is your favorite color? ")
+print(f"So your favorite color is {my_response}.")
+print( )
+print(f"Really, {my_response}? Thats such a generic color.")
+print(f"I thought it would be something more unique. You could have a least said somthing like Light {my_response} or Dark {my_response}.")

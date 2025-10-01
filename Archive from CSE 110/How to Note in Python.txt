@@ -1,0 +1,40 @@
+How to write variables in Python
+
+	variable = "value of said variable"
+
+
+\   treat next character diffrently
+	good for including ' or " into a print text  (gramer)
+
+\n  to put text onto new line in the terminal
+
+
+
+{EXAMPLE OF HOW TO FORMAT TEXT}
+words = "the cat IN THE hat"		the cat IN THE hat
+words.capitalize()			The cat in the hat
+words.title()				The Cat In The Hat
+words.upper()				THE CAT IN THE HAT
+words.lower()				the cat in the hat
+words.count("t")				3
+words.lower().count("t")		4
+
+
+MATH
+
+x = 5
+y = 2
+
+print(x + y)
+
+z = int("5")
+int allows you to change one value type to another: text to numerical.
+helpful when taking user input in the terminal   ie:
+x = int(input("How old are you: ))
+
+Floating Point:
+used for decimals
+x = float(input("enter in a number: ))
+
+Number to String:
+y = str(2)

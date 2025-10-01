@@ -1,0 +1,21 @@
+import math
+import time
+
+print("Welcome to the Tire Calculator")
+
+
+pi = math.pi
+#width of the tire in inches
+w = int(input("Enter the width of the tire in mm: "))
+#aspect ratio
+a = int(input("Enter the aspect ratio of the tire (ex 60): "))
+#diameter in inches
+d = int(input("Enter the diameter of the wheel in inches: "))
+#volume in liters
+v = (math.pi * (w**2) * a * (w * a + 2540 * d)) / 10_000_000_000
+
+
+time.sleep(1.5)
+print(f"The volume of the tire is {v:.2f} liters")
+
+
