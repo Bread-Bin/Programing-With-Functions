@@ -39,4 +39,5 @@ def test_suffix():
     assert suffix("tired", "fatiuged") == "ed"
     assert suffix("swimming", "FLYING") == "ing"
 # computer will execute the test functions in this file.
+
 pytest.main(["-v", "--tb=line", "-rN", __file__])

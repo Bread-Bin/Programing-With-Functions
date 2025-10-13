@@ -1,5 +1,6 @@
 import math
 import time
+import pytest
 
 "global varable is not a good practice. "
 "try to keep varible within a function like Def"
@@ -14,10 +15,12 @@ subject() # calling the function.
 def main():
 
 
-while True:
-    Value = input("Enter a number: ")
-    try:
-        return flaot(Value)
-    except ValueError:
-        print("Invalid input. Please enter a number.")
+    while True:
+        Value = input("Enter a number: ")
+        try:
+            return float(Value)
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+main()
 
