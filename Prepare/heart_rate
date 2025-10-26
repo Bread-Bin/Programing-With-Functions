@@ -17,7 +17,6 @@ print('''Welcome to the Heart Rate Calculator
 while True:
     try:
         age = int(input("Please enter your age: "))
-        #broken lines 20-23
         if 0 <= age <= 120:
             break
         else: print("-Invalid input. Please enter a valid age between 0 and 120 ")

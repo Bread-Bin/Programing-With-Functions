@@ -29,6 +29,9 @@ def test_prefix():
 
 def test_suffix():
 
+    suf = suffix("tanner", "talks")
+    assert isinstance(suf, str)
+
     assert suffix("","") == ""
     assert suffix("","correct") == ""
     assert suffix("clear", "") == ""
