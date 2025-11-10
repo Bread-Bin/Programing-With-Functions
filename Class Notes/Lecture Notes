@@ -24,3 +24,17 @@ def main():
 
 main()
 
+for i in range(5):
+    print(i)
+
+for i, fruit in enumerate(["apple", "banana", "cherry"]):
+    print(i, fruit)
+
+uppered = [fruit.upper() for fruit in fruit]
+print(uppered)
+
+
+grades = {"Alice": 85, "Bob": 92, "Charlie": 78}
+print("All grades:", grades)
+
+print()

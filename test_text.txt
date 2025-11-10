@@ -1,0 +1,4 @@
+nineball 
+nineball 
+"C:\Users\kidgl\OneDrive - BYU-Idaho\Documents - One Drive\2025 Campus Classes (Fall)\Programing With Functions\.venv\Scripts\python.exe" "c:/Users/kidgl/OneDrive - BYU-Idaho/Documents - One Drive/2025 Campus Classes (Fall)/Programing With Functions/Class Assignments/07 team act" 
+nineball 

@@ -1,0 +1,46 @@
+import webbrowser
+
+def main():
+    enter_password = input("What is your password? ")
+    compare_password(enter_password)
+
+
+
+def make_password():
+    correctPassword = []
+    userPasscode = input.lower('do you have a password: ')
+    if userPasscode == 'yes':
+        password = input('Enter your password: ')
+    else:
+        newPassword = input('enter a new password: ')
+        correctPassword.append(newPassword)
+        password = newPassword
+
+    return password
+
+
+def compare_password(entry):
+    correct_password = get_recent_password("test_text.txt")
+    if correct_password == entry:
+        webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    else:
+        new_password = input("Enter a new password: ")
+        with open("test_text.txt", "a") as f:
+            f.write(f"{new_password} \n")
+
+
+
+
+def get_recent_password(filename):
+    """Reads a file line by line and returns the most recent password entry."""
+    last_line = None
+    try:
+        with open(filename, 'r') as f:
+            for line in f:
+                last_line = line
+            if last_line:
+                return last_line.strip()
+            return None
+    except FileNotFoundError:
+        return "Error: File not found."
+main()
