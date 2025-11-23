@@ -1,0 +1,59 @@
+
+import csv
+from datetime import datetime
+
+SALES_TAX_RATE = 0.06  # 6% sales tax
+
+
+def read_products(filename="products.csv"):
+    
+    products = {}
+
+    with open(filename, "r") as file:
+        reader = csv.reader(file)
+        next(reader)
+
+        for row in reader:
+            product_code = row[0]
+            name = row[1]
+            price = float(row[2])
+            products[product_code] = {
+                "name": name,
+                "price": price
+            }
+
+    return products
+
+
+def process_requests(filename, products_dict):
+
+    with open(filename, "r") as file:
+        reader = csv.reader(file)
+        next(reader)
+
+        for row in reader:
+            product_code = row[0]
+            quantity = int(row[1])
+
+            item = products_dict[product_code]
+            name = item["name"]
+            price = item["price"]
+
+            print(f"{name}: {quantity} @ ${price:.2f}")
+
+
+def main():
+    products_dict = read_products()
+    print("Gerbald's General Store")
+    print("------------------------")
+
+    print("Products Dictionary:")
+    print(products_dict)
+    print()
+
+    print("Requested products:")
+    process_requests("request.csv", products_dict)
+
+
+if __name__ == "__main__":
+    main()
